@@ -4,6 +4,7 @@ function tratarErroElancar(erro) {
     // throw true
     // throw 'mensagem'
     throw {
+
         nome: erro.name,
         msg: erro.massege,
         date: new Date
@@ -20,5 +21,5 @@ function tratarErroElancar(erro) {
         }
     }
 
-    const obj = {nome: 'Roberto'}
+    const obj = {name: 'Roberto'}
     imprimirNomeGritado(obj)
