@@ -2,7 +2,7 @@
 const http = require('http')
 const { get } = require('lodash')
 
-const getTurma = (letra,callback) => {
+const getTurma = letra => {
     const url = `http://files.cod3r.com.br/curso-js/turma${letra}.json`
     http.get(url,res => {
         let resultado = ''
