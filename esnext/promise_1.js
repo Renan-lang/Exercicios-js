@@ -1,5 +1,5 @@
 
-const p = new Promise(function (resolve)  {
+const p = new Promise(resolve => {
     resolve = (['Ana', 'Bia', 'Carlos', 'Renan'])
 })
 const primeiroElemento = arrayOuString => arrayOuString[0]
