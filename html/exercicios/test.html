@@ -1,6 +1,8 @@
+<h1 style="background-color: blueviolet; border: dashed; background: linear-gradient(to right, yellow, red);width: 340px">
+     Minha Calculadora</h1>
 <body>
-    <h1> Minha Calculadora</h1>
-    <input type="text" value=""><br>
+    <div class="calculadora">
+    <input type="text" value="" class="barra"><br>
     <input type="button" value="1"> 
     <input type="button" value="2">
     <input type="button" value="3">
@@ -16,5 +18,21 @@
     <input type="button" value="-">
     <input type="button" value="0" name="zero">
     <input type="button" value="+">
+    </div>
+    
+    <style>
+        input {
+            border-radius: 10px;
+        }
+
+        .barra{
+            width: 100px;
+        }
+        .calculadora {
+            border: 5px;
+            border-color: blue;
+            
+        }
+    </style>
 
 </body>

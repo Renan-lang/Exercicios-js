@@ -12,21 +12,21 @@ const colors = {
     form: '#9f6581',
     body: '#25b6da',
     padrao: '#616161',
-    get(tag){
-        return this[tag] ? this[tag] : this.padrao
+    get(tagName){
+        return this[tagName] ? this[tagName] : this.padrao
     }
 
 }
 
 
-document.querySelectorAll('.tag').forEach(box => {
-    const tagName = box.tagName.toLowerCase()
+document.querySelectorAll('.tag').forEach(elemento => {
+    const tagName = elemento.tagName.toLowerCase()
 
-    box.style.bordercolor = colors.get(tagName)
-    if(!box.classList.contains('nolabel')){
+    elemento.style.bordercolor = colors.get(tagName)
+    if(!elemento.classList.contains('nolabel')){
         const label = document.createElement('label')
         label.style.background =  colors.get(tagName)
         label.innerHTML = tagName
-        box.insertBefore(label, box.childNodes[0])
+        elemento.insertBefore(label, elemento.childNodes[0])
     }
 })
