@@ -9,9 +9,21 @@
 
 <body class="conteudo exercicio">
     <div>
-        <a href="https://google.com.br">Google</a>
+        <a esperar-um-pouco href="https://google.com.br">Google</a>
     </div>
     <script>
-        // ...
+        function nav (e) {
+            e.preventDefault()
+            console.log('saindo em 5 segundos...')
+            setTimeout(() => {
+                window.location.href = e.target.href
+            }, 5000)
+        }
+
+        // const a = document.querySelector('a')
+        // a.onclick = nav
+
+        const a = document.querySelector('[esperar-um-pouco]')
+        a.onclick = nav
     </script>
 </body>
